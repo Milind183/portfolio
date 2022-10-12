@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+*
+
+body
+{    font-family: 'Kalam';
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #1d1d1d;
+    padding-left: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main-menu
+{
+    width: 150px;
+    background-color: #181818;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: auto;
+    top:0;
+    bottom: 0;
+    display:flex;
+    z-index: 3;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu_top a
+{
+    background-color: #000000;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu nav 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #282828;
+}
+.main-menu nav:hover
+{
+    border-top: 1px solid red;
+}
+
+.main-menu nav a 
+{
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 1.6rem;
+    color: #909096;
+    /* line-height: 5rem; */
+    border-bottom: 1px solid #282828;   
+    text-decoration: none;
+}
+
+.main-menu nav a:hover
+{
+    color:aqua;
+    text-decoration: none;
+    border-bottom: 1px solid red;   
+}
+
+.social 
+{
+    color: #909096;
+    margin: 0;
+    padding-bottom: 100px;
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;    
+    line-height: 1.5rem;
+}
+
+.social ul
+{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+} 
+
+.social li 
+{
+    text-align: center;
+    /* display: list-item; */
+}
+
+.social li a
+{
+    padding: 2rem 7px 2rem 7px;
+    background-color: transparent;
+    color: aquamarine;
+} 
+
+.social li a:hover
+{
+    color: aquamarine;
+}
+
+
+.social svg 
+{
+    width: 1.3rem;
+}
+
+svg:not(:root)
+{
+    overflow: hidden;
+}
+
+.social svg path 
+{
+    fill: #909096;
+}
+
+.social svg path:hover
+{
+    fill: #08fdd8;;
+}
+
+
+.page-outer
+{
+    min-height: 100vh;
+    position: relative;
+}
+
+
+
+.section-home
+{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color:steelblue;
+}
+
+.section-about header h1::before
+{
+    content: 'about(){' ;
+    color: rgb(126, 0, 243);
+    font-size: 18px;
+    position: absolute;
+    margin-top: -4rem;
+    left: -3rem;
+}
+
+.lower 
+{
+    color: rgb(126, 0, 243);
+    /* margin-top: 20px; */
+    font-size:20px;
+}
+
+.text-zone h1 
+{
+    font-size: 60px;
+    color: #08fdd8;
+}
+
+.section-full 
+{
+    min-height: 100vh;
+    padding-left: 4rem;
+    position: relative;
+}
+
+.section-about
+{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* color: aquamarine; */
+    color: white;
+}
+
+.section-about header h1 
+{
+    /* font-family: 'La Belle Aurore'; */
+    font-style: normal;
+    color: #08fdd8;
+    font-size: 70px;
+    line-height: 10px;
+}
+
+.section-about .content a
+{
+    text-decoration: none;
+    color: #08fdd8;
+}
+
+p
+{
+    line-height: 15px;
+}
+
+
+.content a:hover
+{
+    color: red;
+}
+
+
+.section-skills 
+{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.section-skills header h1 
+{
+    
+    font-style: normal;
+    color: #08fdd8;
+}
+
+.section-skills header h1::before
+{
+    content: 'mySkills(){' ;
+        color: rgb(126, 0, 243);
+    font-size: 18px;
+    position: absolute;
+    margin-top: -4rem;
+    left: -3rem;
+}
+
+
+.section-skills .text-zone+div
+{
+    padding-right: 3rem;
+    width: 48%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart 
+{
+    
+    margin-bottom: 2rem;
+    color: #08fdd8;
+}
+
+.chart:hover
+{
+    color: yellow;
+}
+
+.chart span 
+{
+    font-size: 20px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.chart footer 
+{
+    background-color: #373737;
+    height: 2px;
+}
+
+.chart footer div {
+    height: 100%;
+    background-color: #08fdd8;
+}
+
+
+.section-work
+{
+    
+    display: flex;
+    align-items: center;
+
+}
+
+.image-grid 
+{
+    --gap: 20px;
+    --num-cols:3;
+    --row-height:300px;
+
+
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols),1fr);
+    grid-auto-rows: var(--row-height);
+}
+
+.image-grid > img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.section-contact
+{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.section-contact header h1::before
+{
+    content: 'contact(){' ;
+        color: rgb(126, 0, 243);
+    font-size: 18px;
+    position: absolute;
+    margin-top: -4rem;
+    left: -3rem;
+}
+
+
+.section-contact .text-zone
+{
+    width: 50%;
+    z-index: 2;
+    padding: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    max-width: 80rem;
+}
+
+
+.text-zone header 
+{
+    color: #08fdd8;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 40px;
+    line-height: 6rem;
+}
+
+.contact-form
+{
+    width: 75%;
+    /* padding-top: 5rem; */
+    display: block;
+    position: relative;
+}
+
+.contact-form ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+.contact-form ul li 
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    position: relative;
+}
+
+.contact-form ul li.half:first-child
+{
+    margin-left: 0 ;
+}
+
+.contact-form ul li.half
+{
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+    clear: none;
+}
+
+.contact-form input[type="text"] , .contact-form input[type="email"] 
+{
+    width: 100%;
+    border: 0;
+    background: #2b2b2b ;
+    height: 50px;
+    color: #8d8d8d;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px ;
+}
+
+.contact-form #msg
+{
+    width: 100%;
+    border: 0;
+    background: #2b2b2b ;
+    height: 200px;
+    color: #8d8d8d;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+ .contact-form input[type="submit"]
+{
+    width: 100%;
+    border: 1px solid #08fdd8;
+    background: #2b2b2b ;
+    height: 50px;
+    color: #08fdd8;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+} 
+.contact-form input[type="submit"]:hover
+{
+    background: #08fdd8;
+    color: #282828;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
