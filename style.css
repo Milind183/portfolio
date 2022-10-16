@@ -250,6 +250,20 @@ p
     margin-left: 15px;
 }
 
+hr
+{
+    transform: scaleX(0);
+    transform:left;
+    animation: wid 3s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+}
+
+@keyframes wid 
+{
+    100%
+    {
+        transform: scaleX(1);
+    }
+}
 .section-skills .text-zone+div
 {
     padding-right: 3rem;
@@ -285,8 +299,21 @@ p
 }
 
 .chart footer div {
+    width: 0%;
     height: 100%;
     background-color: #08fdd8;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 2s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+   
+}
+@keyframes animate 
+{
+    100%
+    {
+        transform: scaleX(1);
+    }
+
 }
 
 
