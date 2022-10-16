@@ -168,6 +168,12 @@
                                 </li>
                             </ul>
                         </form> 
+                        <div class="alert" >
+                             <span>
+                                I Will contact you soon !!! 
+                             </span>
+                             <div></div>
+                        </div>
                     </div>
                     <p class="lower">}</p>
 
@@ -177,6 +183,13 @@
         </div>
     </div>
 
+    <script>
+        const myform = document.getElementById("contact")
+        myform.addEventListener("submit" , (e) => {
+            e.preventDefault()
+            alert("thankYou for contacting me ")
+        })
+    </script>
 
 </body>
 </html>
