@@ -246,6 +246,10 @@ p
     left: -3rem;
 }
 
+.section-skills .text-zone hr
+{ 
+    margin-left: 15px;
+}
 
 .section-skills .text-zone+div
 {
