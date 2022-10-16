@@ -153,6 +153,15 @@ svg:not(:root)
     color:steelblue;
 }
 
+
+
+.section-full 
+{
+    min-height: 100vh;
+    padding-left: 4rem;
+    position: relative;
+}
+
 .section-about header h1::before
 {
     content: 'about(){' ;
@@ -175,26 +184,19 @@ svg:not(:root)
     color: #08fdd8;
 }
 
-.section-full 
-{
-    min-height: 100vh;
-    padding-left: 4rem;
-    position: relative;
-}
 
 .section-about
 {
+    opacity: 1;
     height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
-    /* color: aquamarine; */
     color: white;
 }
 
 .section-about header h1 
 {
-    /* font-family: 'La Belle Aurore'; */
     font-style: normal;
     color: #08fdd8;
     font-size: 70px;
@@ -299,14 +301,13 @@ hr
 }
 
 .chart footer div {
-    width: 0%;
     height: 100%;
     background-color: #08fdd8;
     transform: scaleX(0);
     transform-origin: left;
-    animation: animate 2s cubic-bezier(0.23, 1, 0.320, 1) forwards;
-   
+    animation: animate 2s cubic-bezier(0.23, 1, 0.320, 1) forwards;   
 }
+
 @keyframes animate 
 {
     100%
